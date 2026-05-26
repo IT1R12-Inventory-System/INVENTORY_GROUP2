@@ -36,3 +36,4 @@ root.geometry("600x400")
 
 # ✅ RUN GUI LAST (IMPORTANT)
 root.mainloop()
+
