@@ -8,6 +8,7 @@ FILE = "inventory_data.txt"
 def load():
     if not os.path.exists(FILE):
         open(FILE, "w", encoding="utf-8").close()
+
     items = []
     try:
         with open(FILE, "r", encoding="utf-8") as f:
@@ -21,4 +22,17 @@ def load():
                 })
     except Exception:
         messagebox.showerror("Load Error", "Could not read inventory file.")
+
     return items
+
+
+# ✅ CREATE GUI FIRST
+root = tk.Tk()
+root.title("Inventory System")
+root.geometry("600x400")
+
+# (you can add buttons, labels here later)
+
+
+# ✅ RUN GUI LAST (IMPORTANT)
+root.mainloop()
